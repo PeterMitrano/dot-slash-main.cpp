@@ -1,11 +1,11 @@
 #ifndef BASH
 echo -e "\033[33mINSTALLING DEPENDENCIES...\033[0m"
 echo ""
-sudo apt-get install cmake g++
+sudo apt-get install -qq cmake g++
 echo ""
 echo -e "\033[33mRUNNING CMAKE...\033[0m"
 echo ""
-mkdir build
+mkdir -p build
 cd build
 cmake ..
 make
