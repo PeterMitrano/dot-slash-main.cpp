@@ -2,7 +2,7 @@ main: main.o lib.a
 	ld -dynamic-linker /lib64/ld-linux-x86-64.so.2 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/x86_64-linux-gnu  -L/usr/lib/ main.o lib.a -lstdc++ -lc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o -o main
 
 lib.a: foo.o bar.o
-	ar r foo.o bar.o -o lib.a
+	ar r lib.a foo.o bar.o
 
 main.o: main.s
 	as main.s -o main.o
