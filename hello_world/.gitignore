@@ -1,0 +1,8 @@
+*.s
+*.o
+a.out
+*.ii
+*.i
+main
+*.a
+*.asm
