@@ -1,6 +1,6 @@
 #if false
-g++ main.cpp
-./a.out
+g++ $0 -o .secret_main
+./.secret_main
 exit
 #endif
 #include <iostream>
