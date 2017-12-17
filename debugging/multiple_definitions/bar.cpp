@@ -1,6 +1,4 @@
 #ifdef FIXED
-extern int x;
+int x = 0;
 #else
-int x = 2;
 #endif
-
