@@ -1,6 +1,6 @@
 #if false
-g++ $0 -o .secret_main
-./.secret_main
+g++ $0 -o .main
+./.main
 exit
 #endif
 #include <iostream>
